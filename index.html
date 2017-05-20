@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector Game</title>
+  <link rel="reset"  href="assets/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+  <div class = "wrapper">
+    <!-- Main heading of page and Game Name -->
+    <header>
+      <h1>Crystals Collector</h1>
+    </header>
+
+    <!-- Instructions on how to play the game -->
+    <div>
+      <h2>Instructions</h2>
+      <br></br>
+      <p>You will be given a random number at the start of the game.</P>
+      <br></br>
+      <p>There are four crystals below. When you click on a crystal you will add a specific amount
+      of points to your total score.</p>
+      <br></br>
+      <p>You win the game by matching your total score to the random number. You lose the game if your
+      total score goes above the random number.</p>
+      <br></br>
+      <p>The value of each crystal is hidden from you until you click on it.</p>
+      <br></br>
+      <p>Each time the game re-starts, a new random number will display and the value of the crystals will
+      change as well.</p>
+      <br><br>
+    </div>
+
+    <!-- Random generated number display -->
+    <div>
+        <p>Random Number:</p>
+        <p id = "randNum"></p>
+    </div>
+
+    <!-- Score calculator -->
+    <div>
+        <p>Your Score:</p>
+        <p id = "score"></p>
+        <input type="text" id = "counter" value = "0">
+    </div>
+
+    <!-- Crystals -->
+    <div >
+      <img class = "crystals" id = "blackquartz" src = "./assets/blackquartz.jpg"
+      alt = "Blackquartz" style= "width:200px; height:200px;" >
+      <input type="hidden" id ="crystal1" value = "0" >
+
+      <img class = "crystals" id = "fluorite" src = "./assets/fluorite.jpg"
+      alt = "Fluorite" style= "width:200px; height:200px;">
+      <input type="hidden" id ="crystal2" value = "0" >
+
+      <img class = "crystals" id = "selenite" src = "./assets/selenite.jpg"
+      alt = "Slenite" style= "width:200px; height:200px;">
+      <input type="hidden" id ="crystal3" value = "0" >
+
+      <img class = "crystals" id = "quartz" src = "./assets/quartz.jpg"
+      alt = "Quartz" style= "width:200px; height:200px;">
+      <input type="hidden" id ="crystal4" value = "0" >
+    </div>
+
+    <!-- Player total score -->
+    <div>
+      <p id = "wins">Wins:</p>
+      <p id = "loses">Loses:</p>
+    </div>
+
+
+    <!--Page Footer with Copyright Info-->
+  <footer>
+      Copyright 2017 Volenté Stevens
+  </footer>
+</div>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src= "./assets/game.js"></script>
+
+
+</body>
+</html>
