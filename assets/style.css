@@ -1,3 +1,105 @@
-header{
-  
+/*Background styling */
+
+body {
+  background-image: url("../assets/quartz-structure.jpg");
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-repeat: repeat-y;
+  background-position: right;
+  background-color: #F0F8FF;
+  background-size: 420px;
+}
+  }
+
+header {
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  }
+
+h1 {
+  font-family: 'Barrio', cursive;
+  font-size: 100px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #87CEFA;
+  float: left;
+  clear: both;
+  padding:40px;
+  margin: 50px;
+  }
+
+  .instructions{
+    float: left;
+    clear: both;
+    text-align: center;
+    background-color: #ADD8E6;
+    margin: 110px;
+    margin-top: -20px;
+  }
+h2 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 45px;
+}
+p {
+  font-family: 'BenchNine', sans-serif;
+  font-size: 20px;
+  }
+
+  .randomnumber {
+    float: left;
+    clear: both;
+    margin: 110px;
+    margin-top: 10px;
+    background-color: #ADD8E6;
+    width: 51%;
+    padding-left: 50px;
+    margin-top: -80px;
+  }
+
+  .calculator {
+    float: left;
+    clear: both;
+    margin: 110px;
+    margin-top: 10px;
+    background-color: #ADD8E6;
+    width: 51%;
+    padding-left: 50px;
+    margin-top: -80px;
+  }
+
+.crystals {
+  float: left;
+  clear: both;
+  margin: 100px;
+  margin-top: -70px;
+  width: 100%;
+}
+
+.tally {
+  float: left;
+  clear: both;
+  margin: 110px;
+  margin-top: 10px;
+  background-color: #ADD8E6;
+  width: 51%;
+  padding-left: 50px;
+  margin-top: -80px;
+  margin-bottom: 30px;
+}
+
+footer {
+  overflow: auto;
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  background-color: #87CEFA;
+  width: 100%;
+  font-family: 'Abril Fatface', cursive;
+  display: block;
+  margin: auto;
 }

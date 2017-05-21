@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Crystal Collector Game</title>
+  <!--Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
   <link rel="reset"  href="assets/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
@@ -17,9 +22,8 @@
     </header>
 
     <!-- Instructions on how to play the game -->
-    <div>
+    <div class = "instructions">
       <h2>Instructions</h2>
-      <br></br>
       <p>You will be given a random number at the start of the game.</P>
       <br></br>
       <p>There are four crystals below. When you click on a crystal you will add a specific amount
@@ -36,41 +40,43 @@
     </div>
 
     <!-- Random generated number display -->
-    <div>
+    <div class= "randomnumber">
         <p>Random Number:</p>
         <p id = "randNum"></p>
     </div>
 
     <!-- Score calculator -->
-    <div>
+    <div class= "calculator">
         <p>Your Score:</p>
         <p id = "score"></p>
         <input type="text" id = "counter" value = "0">
     </div>
 
     <!-- Crystals -->
-    <div >
-      <img class = "crystals" id = "blackquartz" src = "./assets/blackquartz.jpg"
-      alt = "Blackquartz" style= "width:200px; height:200px;" >
+    <div class = "crystals">
+      <img id = "blackquartz" src = "./assets/blackquartz.jpg"
+      alt = "Blackquartz" style= "width:200px; height:200px;" value = "0">
       <input type="hidden" id ="crystal1" value = "0" >
 
-      <img class = "crystals" id = "fluorite" src = "./assets/fluorite.jpg"
+      <img id = "fluorite" src = "./assets/fluorite.jpg"
       alt = "Fluorite" style= "width:200px; height:200px;">
       <input type="hidden" id ="crystal2" value = "0" >
 
-      <img class = "crystals" id = "selenite" src = "./assets/selenite.jpg"
+      <img id = "selenite" src = "./assets/selenite.jpg"
       alt = "Slenite" style= "width:200px; height:200px;">
       <input type="hidden" id ="crystal3" value = "0" >
 
-      <img class = "crystals" id = "quartz" src = "./assets/quartz.jpg"
+      <img id = "quartz" src = "./assets/quartz.jpg"
       alt = "Quartz" style= "width:200px; height:200px;">
       <input type="hidden" id ="crystal4" value = "0" >
     </div>
 
     <!-- Player total score -->
-    <div>
-      <p id = "wins">Wins:</p>
-      <p id = "loses">Loses:</p>
+    <div class = "tally">
+      <p>Wins:</p>
+      <p id = "wins" value = "0"></p>
+      <p>Loses:</p>
+      <p id = "loses" value = "0"></p>
     </div>
 
 
@@ -81,7 +87,7 @@
 </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-  <script type="text/javascript" src= "./assets/game.js"></script>
+  <script type="text/javascript" src= "assets/game.js"></script>
 
 
 </body>
