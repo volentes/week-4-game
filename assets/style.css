@@ -70,6 +70,7 @@ p {
     width: 51%;
     padding-left: 50px;
     margin-top: -80px;
+    padding-bottom: 20px;
   }
 
 .crystals {
@@ -102,4 +103,8 @@ footer {
   font-family: 'Abril Fatface', cursive;
   display: block;
   margin: auto;
+}
+
+#counter {
+  background-color: #ADD8E6;
 }
